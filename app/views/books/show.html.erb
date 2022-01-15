@@ -4,11 +4,19 @@
  </div>
 <% end %>
 
-<h2>Title:</h2>
-<%= @book.title %>
+<table>
+ <tbody>
+  <tr>
+   <th>Title:</th>
+   <td><%= @book.title %></td>
+  </tr>
 
-<h2>Body:</h2>
-<%= @book.body %>
+  <tr>
+   <th>Body:</th>
+   <td><%= @book.body %></td>
+  </tr>
+
+</table>
 
 <%= link_to "Edit", edit_book_path(@book.id) %>
 <%= " |" %>
